@@ -60,13 +60,13 @@ A robust, professional E-commerce application built from scratch using **Java Sp
 Open PostgreSQL (pgAdmin or SQL Shell) and create the database:
 ```sql
 CREATE DATABASE ecommercedb;
-2. Backend Setup
+* 2. Backend Setup
 
-Navigate to the backend folder.
+* Navigate to the backend folder.
 
-Open src/main/resources/application.properties.
+* Open src/main/resources/application.properties.
 
-Configure your database credentials and Stripe Key:
+* Configure your database credentials and Stripe Key:
 
 code
 Properties
