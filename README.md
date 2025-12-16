@@ -61,37 +61,72 @@ Open PostgreSQL (pgAdmin or SQL Shell) and create the database:
 ```sql
 CREATE DATABASE ecommercedb;
 2. Backend Setup
+
 Navigate to the backend folder.
+
 Open src/main/resources/application.properties.
+
 Configure your database credentials and Stripe Key:
+
 code
 Properties
+download
+content_copy
+expand_less
 spring.datasource.url=jdbc:postgresql://localhost:5432/ecommercedb
 spring.datasource.username=postgres
 spring.datasource.password=YOUR_DB_PASSWORD
 
 # Stripe Settings
 stripe.secret.key=sk_test_YOUR_STRIPE_KEY
+
 Run the application using IntelliJ IDEA or Maven:
+
 code
 Bash
+download
+content_copy
+expand_less
 ./mvnw spring-boot:run
+
 The server will start on port 8081.
+
 3. Frontend Setup
+
 Navigate to the frontend folder.
+
 Install dependencies:
+
 code
 Bash
+download
+content_copy
+expand_less
 npm install
+
 Run the development server:
+
 code
 Bash
+download
+content_copy
+expand_less
 npm run dev
+
 The application will be available at http://localhost:3000.
+
 📸 Screenshots
+
 (You can upload screenshots of your Home Page, Cart, and Admin Dashboard here later)
+
 🛡️ Security Note
+
 This project was built for educational purposes.
+
 API Keys: Never commit real API keys to GitHub.
+
 Production: For a live deployment, configure environment variables and cloud storage (AWS S3) for images.
-Author: [Your Name]
+
+Author: FOPS
+
+
